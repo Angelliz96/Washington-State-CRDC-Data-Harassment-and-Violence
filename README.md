@@ -1,43 +1,70 @@
-# Washington-State-CRDC-Data-Harassment-and-Violence
-Analyzing harassment and violence in Washington State schools using CRDC data to identify trends, disparities, and insights for social impact.
-Overview
+📚 Washington State CRDC Data – Harassment and Violence
+🔎 Overview
 
-This project uses data from the Civil Rights Data Collection (CRDC), a biennial survey conducted by the U.S. Department of Education’s Office for Civil Rights (OCR). Since 1968, the CRDC has collected detailed information about student enrollment, educational programs, and services. Most of the data is disaggregated by race/ethnicity, sex, disability status, and English language proficiency.
+This project uses the Civil Rights Data Collection (CRDC) to analyze incidents of harassment and violence in Washington State schools. Data is disaggregated by race/ethnicity, gender, disability status, and English language proficiency, allowing us to explore trends, disparities, and insights for social impact.
 
-This dataset focuses specifically on harassment and violence indicators for schools in Washington State. It provides insights into reported incidents and allows for analysis of disparities and patterns across demographic groups.
+💡 Goal: Apply data science to understand social challenges and inform policy, leveraging a background in psychology and social work.
 
-Source and Metadata
-Data Provider: U.S. Department of Education – Office for Civil Rights (OCR)
-Dataset: Civil Rights Data Collection (CRDC)
-State Coverage: Washington
+📊 Dataset Details
+
+Source: U.S. Department of Education – Office for Civil Rights (OCR)
+
+Coverage: Washington State schools
+
 Date Created: August 30, 2023
+
 Last Data Update: August 30, 2023
+
 Metadata Last Updated: May 5, 2025
-Official Website: OCR Data Collection
-Dataset Structure
 
-The dataset includes information reported directly by school districts. Key sections include:
-
-School and District Information
-
-District ID, School ID, School Name, Location
-
-Demographics
-
-Race/Ethnicity (e.g., Hispanic, Black, White, Asian, Native American)
-Gender (Male, Female)
-Disability Status
-English Language Learner (ELL) Status
-
-Incident Data
-
-Type of Harassment/Violence (e.g., bullying, sexual harassment, physical attack)
-Number of Reported Incidents
-Disaggregation by subgroup
-
-Note: Some variables may be suppressed by OCR to protect student privacy.
-
-File Information
 Format: CSV (Comma-Separated Values)
-Approximate Size: [Add number of rows/columns once explored]
-Encoding: UTF-8
+
+Official Website: OCR Data Collection
+
+🗂 Dataset Structure
+
+The dataset includes:
+
+Section	Columns / Variables
+School & District	District ID, School ID, School Name, Location
+Demographics	Race/Ethnicity, Gender, Disability Status, English Language Learner (ELL) Status
+Incident Data	Type of Harassment/Violence, Number of Reported Incidents
+
+⚠️ Some values may be suppressed to protect student privacy.
+
+🚀 Potential Uses
+
+Identify disparities in harassment and violence across demographic groups.
+
+Analyze trends by school, district, or over time.
+
+Create dashboards or visualizations for policymakers, educators, and communities.
+
+Support research in public health, social work, and education policy.
+
+⚠️ Limitations
+
+Reporting accuracy depends on school district submissions.
+
+Some data is suppressed or missing to protect privacy.
+
+Reflects a snapshot in time (most recent 2023 data) and may not represent current conditions.
+
+🛠 Getting Started
+
+Download the dataset from the CRDC portal
+.
+
+Explore the data and identify key variables related to harassment and violence.
+
+Clean and preprocess the data (handle missing/suppressed values, align school names).
+
+Perform exploratory analysis, visualizations, and dashboards.
+
+Document your findings and share insights.
+
+🤝 Collaboration & Contact
+
+If you want to collaborate or provide feedback, feel free to open an issue or submit a pull request.
+
+Questions? Visit the official CRDC page: https://ocrdata.ed.gov/
