@@ -1,70 +1,70 @@
-📚 Washington State CRDC Data – Harassment and Violence
-🔎 Overview
+Washington State CRDC Data – Harassment and Violence
+📄 Project Overview
 
-This project uses the Civil Rights Data Collection (CRDC) to analyze incidents of harassment and violence in Washington State schools. Data is disaggregated by race/ethnicity, gender, disability status, and English language proficiency, allowing us to explore trends, disparities, and insights for social impact.
+This project analyzes the Civil Rights Data Collection (CRDC) – Harassment and Violence dataset for Washington State. The dataset provides information reported by school districts on incidents of harassment, bullying, and violence in schools. It includes demographic information such as race/ethnicity, gender, disability status, and English proficiency, allowing for analysis of trends, disparities, and patterns across different student groups.
 
-💡 Goal: Apply data science to understand social challenges and inform policy, leveraging a background in psychology and social work.
+📅 Dataset Information
 
-📊 Dataset Details
+Data Year: 2017-18 school year
 
-Source: U.S. Department of Education – Office for Civil Rights (OCR)
-
-Coverage: Washington State schools
-
-Date Created: August 30, 2023
-
-Last Data Update: August 30, 2023
+Data Last Updated: August 30, 2023
 
 Metadata Last Updated: May 5, 2025
 
-Format: CSV (Comma-Separated Values)
+Date Created: August 30, 2023
 
-Official Website: OCR Data Collection
+Source: U.S. Department of Education, Office for Civil Rights (OCR)
 
-🗂 Dataset Structure
+Frequency: Biennial
+
+Note: Although the file was updated recently, it only contains data for the 2017-18 school year. The update dates reflect when the data and metadata were processed or re-published, not the addition of more recent school years.
+
+🗂 Dataset Contents
 
 The dataset includes:
 
-Section	Columns / Variables
-School & District	District ID, School ID, School Name, Location
-Demographics	Race/Ethnicity, Gender, Disability Status, English Language Learner (ELL) Status
-Incident Data	Type of Harassment/Violence, Number of Reported Incidents
+School and district information: IDs, names, location
 
-⚠️ Some values may be suppressed to protect student privacy.
+Student demographics: race/ethnicity, gender, disability status, English proficiency
 
-🚀 Potential Uses
+Reported incidents: type of harassment or violence and number of incidents by subgroup
 
-Identify disparities in harassment and violence across demographic groups.
+Important Notes:
 
-Analyze trends by school, district, or over time.
+Data is reported directly by school districts to OCR and is not validated by OSPI, so it may differ from other official OSPI reports.
 
-Create dashboards or visualizations for policymakers, educators, and communities.
+Some data may be suppressed to protect student privacy.
 
-Support research in public health, social work, and education policy.
+Directory information for some schools may be incomplete if names do not match OSPI records.
 
-⚠️ Limitations
+🔎 Project Goals
 
-Reporting accuracy depends on school district submissions.
+Explore trends and disparities in harassment and violence incidents in Washington State schools.
 
-Some data is suppressed or missing to protect privacy.
+Analyze demographic differences in reported incidents.
 
-Reflects a snapshot in time (most recent 2023 data) and may not represent current conditions.
+Visualize data through charts, graphs, and potentially interactive dashboards.
 
-🛠 Getting Started
+Build a reproducible analysis pipeline for educational or social impact research.
 
-Download the dataset from the CRDC portal
-.
+📊 Exploratory Data Analysis (EDA)
 
-Explore the data and identify key variables related to harassment and violence.
+The project notebook includes:
 
-Clean and preprocess the data (handle missing/suppressed values, align school names).
+Data overview and summary statistics
 
-Perform exploratory analysis, visualizations, and dashboards.
+Checking for missing values and data consistency
 
-Document your findings and share insights.
+Distribution of incidents by type and demographic groups
 
-🤝 Collaboration & Contact
+Analysis by school and district
 
-If you want to collaborate or provide feedback, feel free to open an issue or submit a pull request.
+Visualizations highlighting key patterns and trends
 
-Questions? Visit the official CRDC page: https://ocrdata.ed.gov/
+⚡ Tools Used
+
+Python (Pandas, NumPy)
+
+Data Visualization (Matplotlib, Seaborn)
+
+Jupyter Notebook for analysis and documentation
