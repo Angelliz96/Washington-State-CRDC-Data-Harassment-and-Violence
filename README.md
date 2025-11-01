@@ -43,7 +43,44 @@ This dataset allows us to explore general trends and patterns in harassment and 
 | **IncidentsOfThreatAttackWithWeapon**                     | Number of threat-of-attack incidents with a weapon.                                                                                                                                                      |
 | **IncidentsOfThreatAttackWithFirearmOrExplosive**         | Number of threat-of-attack incidents with a firearm or explosive.                                                                                                                                        |
 | **IncidentsOfThreatAttackWithoutWeapon**                  | Number of threat-of-attack incidents without a weapon.                                                                                                                                                   |
-| **IncidentsOfPosessionFireamOrExplosive**                 | Number of incidents of possession of a firearm or explosive.                                                                                                                                             |
+| **IncidentsOfPosessionFireamOrExplosive**                 | Number of incidents of possession of a firearm or explosive.  
+
+Project Objectives & Key Questions 🧠
+Objective
+
+Explore and analyze school-level harassment and violence incidents in Washington State, identifying patterns, trends, and differences across locations and school types.
+
+Key Questions
+
+Incident Frequency by Type
+
+Which types of incidents are most frequent in Washington schools?
+
+Are harassment, attacks, robberies, or sexual assault incidents more prevalent?
+
+Geographic Comparison
+
+Which counties or districts report the highest number of incidents?
+
+Are there regional differences in incident occurrence?
+
+Comparison by School Type
+
+Which school types report more incidents?
+
+Are there trends in incident types according to school type?
+
+Patterns and Insights
+
+Are there correlations between different incident types?
+
+What overall insights can be drawn about school safety?
+
+Dataset Limitations
+
+Only aggregated data is available; subgroup-level analysis (e.g., race, gender, disability) is not possible.
+
+Findings reflect general trends, not detailed demographic differences.|
 
 
 🧹 Data Cleaning and Preparation
