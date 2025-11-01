@@ -1,9 +1,13 @@
 Washington State CRDC Data – Harassment and Violence 📄
 Project Overview
 
-This project analyzes the Civil Rights Data Collection (CRDC) – Harassment and Violence dataset for Washington State. The dataset provides information reported by school districts on incidents of harassment, bullying, and violence in schools. It includes demographic information such as race/ethnicity, gender, disability status, and English proficiency, allowing for the analysis of trends, disparities, and patterns across different student groups.
+This project analyzes the Civil Rights Data Collection (CRDC) – Harassment and Violence dataset for Washington State, collected by the Office for Civil Rights (OCR) of the U.S. Department of Education. The dataset provides information reported by school districts on incidents of harassment, bullying, and violence in schools.
 
-📅 Dataset Information
+Important note: Due to OCR privacy policies, many data points for subgroups (race, gender, disability, etc.) are suppressed. Therefore, the analysis in this project is limited to rows where StudentGroupType == 'AllStudents', representing aggregated data for the entire school.
+
+The dataset allows exploring general trends and patterns of incidents in Washington schools but does not allow reliable comparisons between student subgroups.
+
+Dataset Information
 
 Data Year: 2017–18 school year
 
@@ -11,66 +15,55 @@ Data Last Updated: August 30, 2023
 
 Metadata Last Updated: May 5, 2025
 
-Date Created: August 30, 2023
-
 Source: U.S. Department of Education, Office for Civil Rights (OCR)
 
 Frequency: Biennial
 
-Although the file was updated recently, it only contains data for the 2017–18 school year. The update dates reflect when the data and metadata were processed or re-published, not the addition of more recent school years.
+Dataset Columns (Detailed Description)
+Column	Description
+County	County where the school is located (39 unique counties).
+ESDName	Educational Service District (ESD) the school belongs to (12 ESDs in the dataset).
+DistrictName	Name of the school district (314 unique districts).
+SchoolName	Name of the school (2,159 unique schools).
+CurrentSchoolType	School type: P = Pre-K, S = Elementary, I = Intermediate, A = Alternative, R = Residential, J = Junior High, 5 = Grade 5, Q = Special Program, V = Vocational, C = Charter/Other.
+StudentGroupType	Type of student group: in this filtered dataset, only AllStudents.
+StudentGroup	Student group name: in this filtered dataset, always AllStudents.
+Allegations of harassment Based on Race/Ethnicity	Number of harassment incidents based on race/ethnicity reported at the school.
+Allegations of harassment Based on Religion	Number of harassment incidents based on religion reported at the school.
+Allegations of harassment Based on Sex	Number of harassment incidents based on sex reported at the school.
+Allegations of harassment Based on Sexual Orientation	Number of harassment incidents based on sexual orientation reported at the school.
+Allegations of harassment Based on Disability	Number of harassment incidents based on disability reported at the school.
+IncidentsOfRape	Number of rape incidents reported at the school.
+IncidentsOfSexualAssault	Number of sexual assault incidents reported at the school.
+IncidentsOfRobberyWithWeapon	Number of robbery incidents with a weapon reported at the school.
+IncidentsOfRobberyWithFirearmOrExplosive	Number of robbery incidents with a firearm or explosive reported at the school.
+IncidentsOfRobberyWithoutWeapon	Number of robbery incidents without a weapon reported at the school.
+IncidentsOfAttackWithWeapon	Number of attack incidents with a weapon reported at the school.
+IncidentsOfAttackWithFirearmOrExplosive	Number of attack incidents with a firearm or explosive reported at the school.
+IncidentsOfAttackWithoutWeapon	Number of attack incidents without a weapon reported at the school.
+IncidentsOfThreatAttackWithWeapon	Number of threat of attack incidents with a weapon reported at the school.
+IncidentsOfThreatAttackWithFirearmOrExplosive	Number of threat of attack incidents with a firearm or explosive reported at the school.
+IncidentsOfThreatAttackWithoutWeapon	Number of threat of attack incidents without a weapon reported at the school.
+IncidentsOfPosessionFireamOrExplosive	Number of incidents of possession of a firearm or explosive reported at the school.
+Data Cleaning and Preparation
 
-🗂 Dataset Contents
+Only rows with StudentGroupType == 'AllStudents' were kept, as these are the only rows with real numeric values.
 
-The dataset includes:
+This ensures that the final dataset contains only reliable aggregated school-level data, eliminating rows with suppressed or unavailable data.
 
-School and district information: IDs, names, and locations
-
-Student demographics: race/ethnicity, gender, disability status, and English proficiency
-
-Reported incidents: type of harassment or violence and number of incidents by subgroup
-
-Important Notes:
-
-Data is reported directly by school districts to OCR and is not validated by OSPI, so it may differ from other official OSPI reports.
-
-Some data is suppressed to protect student privacy.
-
-Directory information for some schools may be incomplete if names do not match OSPI records.
-
-🔎 Project Goals
-
-Explore trends and disparities in harassment and violence incidents in Washington State schools.
-
-Analyze demographic differences in reported incidents.
-
-Visualize data through charts, graphs, and potentially interactive dashboards.
-
-Build a reproducible analysis pipeline for educational or social impact research.
-
-⚙️ Data Cleaning and Preparation
-
-During the initial exploration, it was identified that approximately 1.5% of the dataset (504 rows) had "Data Not Disclosed or Unavailable" in the OrganizationLevel column and across most other fields, including identifiers and incident counts.
-These records were excluded from the main analysis because they did not contain usable or verifiable information.
-
-This decision was made to ensure data integrity and analytical clarity, while maintaining awareness of the limitations that arise from data suppression and privacy protection.
-
-The excluded records likely represent cases where data was withheld by OCR to protect student confidentiality, particularly for small schools or low incident counts.
-
-📊 Exploratory Data Analysis (EDA)
+Exploratory Data Analysis (EDA)
 
 The project notebook includes:
 
-Overview of dataset structure and summary statistics
+Dataset structure and summary statistics.
 
-Data cleaning and missing value assessment
+Distribution of incidents by harassment and violence type.
 
-Distribution of incidents by type and demographic group
+Comparison of incidents by school, district, and county.
 
-Analysis by school, district, and county
+Visualizations: bar charts, histograms, and maps by county.
 
-Visualizations highlighting key patterns and trends
-
-⚡ Tools Used
+Tools Used
 
 Python: Pandas, NumPy
 
