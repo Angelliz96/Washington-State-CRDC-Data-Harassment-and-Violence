@@ -57,6 +57,8 @@ Explore and analyze school-level harassment and violence incidents in Washington
 -Which types of incidents are most frequent in Washington schools?
 
 ### Incident Frequency Table
+![Incident Table](incident_summary_table.png)
+
 ![Incident Table](incident_frequency.png)
 
 Are harassment, attacks, robberies, or sexual assault incidents more prevalent?
