@@ -45,16 +45,19 @@ This dataset allows us to explore general trends and patterns in harassment and 
 | **IncidentsOfThreatAttackWithoutWeapon**                  | Number of threat-of-attack incidents without a weapon.                                                                                                                                                   |
 | **IncidentsOfPosessionFireamOrExplosive**                 | Number of incidents of possession of a firearm or explosive.  
 
-Project Objectives & Key Questions 🧠
-Objective
+**Project Objectives & Key Questions 🧠
+Objective**
 
 Explore and analyze school-level harassment and violence incidents in Washington State, identifying patterns, trends, and differences across locations and school types.
 
-Key Questions
+**Key Questions**
 
-Incident Frequency by Type
+**Incident Frequency by Type**
 
-Which types of incidents are most frequent in Washington schools?
+-Which types of incidents are most frequent in Washington schools?
+
+### Incident Frequency Table
+![Incident Table](incident_table.png)
 
 Are harassment, attacks, robberies, or sexual assault incidents more prevalent?
 
